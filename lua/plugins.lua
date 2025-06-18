@@ -3,12 +3,9 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.2',
-  -- or                            , branch = '0.1.x',
+    'nvim-telescope/telescope.nvim', tag = '0.1.8',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
-
-  use 'sainnhe/gruvbox-material'
 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
@@ -30,17 +27,14 @@ return require('packer').startup(function(use)
     }
   }
 
+  use 'sainnhe/gruvbox-material'
+
   use {
     "windwp/nvim-autopairs",
     config = function() require("nvim-autopairs").setup {} end
   }
 
   use 'fatih/vim-go'
-
-  use {
-    'ruifm/gitlinker.nvim',
-    requires = 'nvim-lua/plenary.nvim',
-  }
 
   use "ray-x/lsp_signature.nvim"
 
@@ -49,5 +43,12 @@ return require('packer').startup(function(use)
   use "sindrets/diffview.nvim"
 
   use "tpope/vim-fugitive"
+
+  use {
+    'linrongbin16/gitlinker.nvim',
+    config = function()
+      require('gitlinker').setup()
+    end,
+  }
 
 end)

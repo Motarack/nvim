@@ -5,3 +5,5 @@ require("diffview").setup({
 		},
 	},
 })
+vim.keymap.set('n', '<leader>d', ':DiffviewOpen<cr>')
+vim.keymap.set('n', '<leader>h', ':DiffviewFileHistory %<cr>')

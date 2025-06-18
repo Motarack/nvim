@@ -27,8 +27,12 @@ vim.opt.updatetime = 50
 
 vim.filetype.add({ extension = { templ = "templ" } })
 
+vim.opt.arabicshape = false
+
 -- vim.api.nvim_create_autocmd("BufWritePre", {
 -- 	pattern = "*.go",
 --	command = "%!goimports"
 -- })
+
+vim.keymap.set('n', '<leader>s', ':set invspell<cr>')
 
