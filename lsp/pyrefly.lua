@@ -1,5 +1,13 @@
 return {
-  cmd = { 'pyrefly', 'lsp' },
+  cmd = {
+	  'uv',
+	  '--managed-python',
+	  'run',
+	  '--no-project',
+	  '--active',
+	  'pyrefly',
+	  'lsp',
+  },
   filetypes = { 'python' },
   root_markers = {
     'pyrefly.toml',

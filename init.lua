@@ -7,6 +7,7 @@ vim.lsp.config('*', {
 
 		vim.cmd[[set completeopt+=menuone,noselect,popup,fuzzy]]
 		local chars = {}; for i = 32, 126 do table.insert(chars, string.char(i)) end
+		-- table.insert(chars, string.char(8))
         client.server_capabilities.completionProvider.triggerCharacters = chars
 		vim.lsp.completion.enable(true, client.id, bufnr, {
 			autotrigger = true,
