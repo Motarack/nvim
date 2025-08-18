@@ -1,10 +1,5 @@
 return {
   cmd = {
-	  'uv',
-	  '--managed-python',
-	  'run',
-	  '--no-project',
-	  '--active',
 	  'pyrefly',
 	  'lsp',
   },
