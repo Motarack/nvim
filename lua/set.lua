@@ -22,7 +22,7 @@ vim.opt.signcolumn = "yes"
 -- 
 -- vim.filetype.add({ extension = { templ = "templ" } })
 -- 
--- vim.opt.arabicshape = false
+vim.opt.arabicshape = false
 -- 
 -- -- vim.api.nvim_create_autocmd("BufWritePre", {
 -- -- 	pattern = "*.go",
@@ -31,3 +31,5 @@ vim.opt.signcolumn = "yes"
 -- 
 -- vim.keymap.set('n', '<leader>s', ':set invspell<cr>')
 -- 
+
+vim.opt.jumpoptions = "clean,stack"
