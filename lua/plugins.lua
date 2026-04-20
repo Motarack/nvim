@@ -35,4 +35,16 @@ return require('packer').startup(function(use)
 			require('gitlinker').setup()
 		end,
 	}
+
+	use {
+		'brianhuster/live-preview.nvim',
+		requires = { {
+			'nvim-telescope/telescope.nvim',
+			'ibhagwan/fzf-lua',
+			'echasnovski/mini.pick',
+			'folke/snacks.nvim',
+		} }
+	}
+
+
 end)

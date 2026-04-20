@@ -33,3 +33,10 @@ vim.opt.arabicshape = false
 -- 
 
 vim.opt.jumpoptions = "clean,stack"
+
+vim.filetype.add({
+    extension = {
+		gdshaderinc = "gdshaderinc",
+    }
+})
+

@@ -14,7 +14,6 @@ return {
     '.git',
   },
   init_options = {
-	pythonPath = '/home/motarack/python-venv/bin/python3.13',
 	pyrefly = {
 	  displayTypeErrors = 'force-on',
 	},
