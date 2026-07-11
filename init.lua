@@ -18,4 +18,5 @@ vim.lsp.config('*', {
 vim.lsp.enable('lua_ls')
 vim.lsp.enable('pyrefly')
 vim.lsp.enable('gdscript')
+vim.lsp.enable('superhtml')
 
