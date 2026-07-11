@@ -45,12 +45,14 @@ vim.lsp.config('*', {
 				vim.lsp.completion.get()
 			end
 		})
-		vim.api.nvim_create_autocmd('CursorMoved', {
-			callback = function()
-				vim.lsp.buf.clear_references()
-				vim.lsp.buf.document_highlight()
-			end,
-		})
+        if client:supports_method('textDocument/documentHighlight') then
+			vim.api.nvim_create_autocmd('CursorMoved', {
+				callback = function()
+					vim.lsp.buf.clear_references()
+					vim.lsp.buf.document_highlight()
+				end,
+			})
+		end
 	end,
 })
 
